@@ -3,65 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <title>Javascript Virtuoso</title>
 </head>
 <body>
   <main id="main">
-    <h1>Contacts</h1>
-    <table id="contact-list" summary="List of contacts">
-      <thead>
-        <tr>
-          <th id="table-header-first-name">First Name</th>
-          <th id="table-header-last-name">Last Name</th>
-          <th id="table-header-email">Email</th>
-          <th id="table-header-phone">Phone</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="row odd">
-          <td>John</td>
-          <td>Doe</td>
-          <td>jdoe@email.com</td>
-          <td>123-456-7890</td>
-        </tr>
-        <tr class="row even">
-          <td>Jane</td>
-          <td>Smith</td>
-          <td>jsmith@email.com</td>
-          <td>234-567-8901</td>
-        </tr>
-        <tr class="row odd">
-          <td>Emily</td>
-          <td>Jones</td>
-          <td>ejones@email.com</td>
-          <td>345-678-9012</td>
-        </tr>
-        <tr class="row even">
-          <td>Michael</td>
-          <td>Brown</td>
-          <td>mbrown@email.com</td>
-          <td>456-789-0123</td>
-        </tr>
-        <tr class="row odd">
-          <td>Sarah</td>
-          <td>Wilson</td>
-          <td>swilson@email.com</td>
-          <td>567-890-1234</td>
-        </tr>
-        <tr class="row even">
-          <td>David</td>
-          <td>Lee</td>
-          <td>dlee@email.com</td>
-          <td>678-901-2345</td>
-        </tr>
-        <tr class="row odd">
-          <td>Linda</td>
-          <td>Clark</td>
-          <td>lclark@email.com</td>
-          <td>789-012-3456</td>
-        </tr>
-      </tbody>
-    </table>
+    <div id="contact__app">
+      <h1>Contacts</h1>
+      <div class="btn__container">
+        <button id="add-contact">Add</button>
+        <button id="change-contact">Edit</button>
+        <button id="remove-contact">Remove</button>
+        <button id="clear-contacts">Clear Contacts</button>
+      </div>
+      
+      <div class="overlay"></div>
+      <table id="contact-list" summary="List of contacts">
+        <thead>
+          <tr>
+            <th id="table-header-first-name">First</th>
+            <th id="table-header-last-name">Last</th>
+            <th id="table-header-email">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row odd">
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@email.com</td>
+          </tr>
+          <tr class="row even">
+            <td>Jane</td>
+            <td>Smith</td>
+            <td>jsmith@email.com</td>
+          </tr>
+          <tr class="row odd">
+            <td>Emily</td>
+            <td>Jones</td>
+            <td>ejones@email.com</td>
+          </tr>
+          <tr class="row even">
+            <td>Michael</td>
+            <td>Brown</td>
+            <td>mbrown@email.com</td>
+          </tr>
+          <tr class="row odd">
+            <td>Sarah</td>
+            <td>Wilson</td>
+            <td>swilson@email.com</td>
+          </tr>
+          <tr class="row even">
+            <td>David</td>
+            <td>Lee</td>
+            <td>dlee@email.com</td>
+          </tr>
+          <tr class="row odd">
+            <td>Linda</td>
+            <td>Clark</td>
+            <td>lclark@email.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="addRow">
+        <button id="add-row">
+          <i class='bx bx-plus'></i>
+        </button>
+      </div>
+    </div>
   </main>
 
   <script src="./01-Core-Concepts/05-DOM-Manipulation.js"></script>
