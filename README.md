@@ -48,6 +48,7 @@ To get started with JavaScript, you'll need a few basic tools:
 4. **Functions**
 5. **Objects and Arrays**
 6. **DOM Manipulation**
+   1. ***Dynamically changing web pages***
 
 ## Advanced Topics
 
